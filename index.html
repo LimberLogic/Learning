@@ -6,22 +6,13 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+		<link rel="stylesheet" href="style.css"/>
+		
 		<!-- 
 			This is a comment.
 		-->
 		<style type="text/css">
-			h1, .h1 {
-				color: green;
-			}
 			
-			.center-content {
-				text-align: center;
-			}
-			
-			#myModal {
-				
-			}
 		</style>
 		<title>Our First Page</title>
 	</head>
@@ -94,7 +85,7 @@
 			</div>
 			
 			<div class="row">
-				<table class="table table-bordered table-striped table-hover">
+				<table class="table table-bordered lll-stripe table-hover">
 					<thead>
 						<tr>
 							<th>First column</th>
@@ -102,6 +93,22 @@
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td>First Column Content</td>
+							<td>Second Column Content</td>
+						</tr>
+						<tr>
+							<td>First Column Content</td>
+							<td>Second Column Content</td>
+						</tr>
+						<tr>
+							<td>First Column Content</td>
+							<td>Second Column Content</td>
+						</tr>
+						<tr lang="sp">
+							<td>First Column Content</td>
+							<td>Second Column Content</td>
+						</tr>
 						<tr>
 							<td>First Column Content</td>
 							<td>Second Column Content</td>
@@ -174,39 +181,39 @@
 		</div>
 		
 		<div class="modal fade" id="myModal">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>One fine body&hellip;</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>One fine body&hellip;</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 		
 		<div class="modal fade" id="secondModal">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Second Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>Another fine body&hellip;</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Second Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>Another fine body&hellip;</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

@@ -1,0 +1,32 @@
+h1, .h1 {
+	color: black;
+	background-color: yellow;
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
+/* This is a section... */
+
+.lll-stripe tbody tr:nth-child(even) {
+	background-color: rgb(225, 225, 232);
+}
+
+.lll-stripe tbody tr[lang=sp] {
+	background-color: yellow;
+}
+
+.lll-stripe tbody tr:hover {
+	/* add style that takes effect when you hover */
+}
+
+.center-content{text-align:center}
+
+span, h3 {
+	color: blue;
+}
+
+@media (min-width: 992px) {
+	.lll-stripe tbody tr[lang=sp] {
+		background-color: blue;
+	}
+}
