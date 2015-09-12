@@ -1,14 +1,27 @@
 <?php
 
+$var = 1.0;
+
 /**
  * Get a factor
  * @return Integer
  */
-function factor() {
+function factor($sanitize=true) {
 	if(isset($_GET['factor']))
-		return $_GET['factor'];
+		if($sanitize)
+			return htmlspecialchars($_GET['factor']);
+		else
+			return $_GET['factor'];
 	else
 		return 5;
+}
+
+/**
+ * We have a factor
+ * @return Boolean
+ */
+function hasFactor() {
+	return (isset($_GET['factor']) && is_numeric($_GET['factor']));
 }
 
 /**
@@ -18,7 +31,7 @@ function factor() {
  * @return Integer the factorial of $number (e.g. $number!)
  */
 function factorial($number=5, $print=false) {	
-	$factor = $number;
+	$factor = abs($number);
 	$ret = 0;
 	
 	while($factor != 1) {
@@ -34,3 +47,46 @@ function factorial($number=5, $print=false) {
 		
 	return $ret;
 }
+
+/**
+ * Returns the primary colors used in CSS
+ * @return Array of colors
+ */
+function getArray() {
+	return array('Red', 'Green', 'Blue');
+}
+
+/**
+ * Returns the list of gender types
+ * @return Array of genders
+ */
+function getGenders() {
+	return array('m' => 'Male', 'f' => 'Female', 'n/a' => 'Other');
+}
+
+/**
+ * This is called on each page load
+ */
+function startup() {
+	session_start();
+	
+	// keep track of visits:
+	if(!isset($_SESSION['visits']))
+		$_SESSION['visits'] = 1;
+	else
+		++$_SESSION['visits'];
+	
+	$GLOBALS['authenticated'] = false;
+	
+	if(!isset($_POST['name']) || !isset($_POST['password']))
+		return;
+		
+	if(strtolower($_POST['name']) != 'tony' || $_POST['password'] != '123123')
+		return;
+	
+	// everything checks out:
+	$GLOBALS['authenticated'] = true;
+	$GLOBALS['name'] = $_POST['name'];
+}
+
+startup();

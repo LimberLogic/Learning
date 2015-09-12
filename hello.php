@@ -117,6 +117,44 @@ while(true) {
 	sleep(1000);
 }
 
+// key => value
+
+$dictionary = array(
+	'Tony' => 95,
+	'Sara' => 98,
+	'Tom' => 82,
+	'Richard' => 89,
+	'Pete' => 65
+);
+
+$highest = 0;
+$lowest = 0;
+$highestIndex = 0;
+$index = -1;
+
+foreach($dictionary as $name => $grade) {
+	++$index;
+	
+	if($grade > $highest) {
+		$highest = $grade;
+		$highestIndex = $index;
+	}
+		
+	if($grade < $lowest)
+		$lowest = $grade;
+}
+
+$median = (($highest + $lowest) / 2);
+echo 'Median: ' . $median . "\n\n";
+
+$names = array_keys($dictionary);
+$name = $names[$highestIndex];
+$grade = $dictionary[$name];
+echo "Highest grade was: {$name} with grade: {$grade}\n";
+
+$tonyGrade = $dictionary['Tony'];
+echo "Tony's grade was: {$tonyGrade}\n";
+
 // Functions
 
 /**
