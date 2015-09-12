@@ -63,7 +63,7 @@ $(document).ready(function(){
 	refreshData();
 	
 	$('#reload').click(clearAndReloadData);
-	setInterval(clearAndReloadData, (10 * 1000));
+	setInterval(refreshData, (10 * 1000));
 });
 
 console.log('You see this first due to async!');

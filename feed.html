@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta charset="utf-8"/><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/ripples.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/material.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/cookies.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/signature_pad.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/skel.min.js"></script><script type="text/javascript" src="//cocreatellc.com/js/init.js"></script><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/><link rel="stylesheet" type="text/css" href="//cocreatellc.com/css/material-fullpalette.min.css"/><link rel="stylesheet" type="text/css" href="//cocreatellc.com/css/ripples.min.css"/><link rel="stylesheet" type="text/css" href="//cocreatellc.com/css/roboto.min.css"/><link rel="stylesheet" type="text/css" href="//cocreatellc.com/css/screen.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/><link rel="stylesheet" type="text/css" href="//cocreatellc.com/css/ll.css"/><title>co+create :: Together We Create :: Explore Feed</title></head><body data-spy="scroll" data-target="#process-dots">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cc-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="//cocreatellc.com/"> co<span class="plus">+</span>create</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="cc-nav">
+      <ul class="nav navbar-nav navbar-right">
+	    <li><a href="//cocreatellc.com/">Home</a></li>
+<!-- 		<li><a href="//cocreatellc.com/feed/">Explore</a></li> -->
+		<li class="dropdown">
+			<a href="//cocreatellc.com/feed/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Explore <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="//cocreatellc.com/feed/">Hottest</a></li>
+				<li><a href="//cocreatellc.com/feed/">Newest</a></li>
+				<li><a href="//cocreatellc.com/feed/">Following (0)</a></li>
+			</ul>
+		</li>
+	    			<li><a href="//cocreatellc.com/account/create/">Create Account</a></li>
+			<li><a href="//cocreatellc.com/account/login/">Sign In</a></li>
+		      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><div class="general-wrapper" data-ng-app="cocreate" data-ng-controller="mainController as main">
+	<div class="container-fluid">			
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Explore Feed</h1>
+				<div class="form-group">
+<!-- 				    <label class="control-label" for="inputLarge">Large input</label> -->
+				    <input class="form-control input-lg" type="text" id="idea">
+				    <span class="input-group-btn">
+			            <a class="btn btn-primary" type="button">Post</a>
+			        </span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row no-collapse jumbotron idea">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3">
+						<h3 class="h3"><span class="icon fa-user ccblue" style="width:100%"></span> <a class="u" href="//cocreatellc.com/u/1" title="Anthony Cargile's Profile">Anthony Cargile</a></h3>
+						<p>co+create</p>
+						
+						<div class="row">
+							<div class="col-md-6">
+								<p><a title="Message User" href="//cocreatellc.com/account/login/" class="btn btn-block btn-default btn-raised btn-sm compose"><span class="glyphicon glyphicon-envelope"></span> Message</a></p>
+							</div>
+							<div class="col-md-6">
+								<p><a title="Get Updates" href="//cocreatellc.com/account/login/" class="btn btn-block btn-default btn-sm btn-raised"><span class="icon fa-bell-o"></span> <span>Get Updates</span></a></p>
+							</div>
+						</div>
+										
+						<p><span class="icon fa-certificate gold"></span> 250 Karma</p>
+					</div>
+					<div class="col-xs-8">
+						<p class="idea-wrapper">
+							&ldquo;<span class="idea-text">This is a test idea.</span>&rdquo;
+						</p>
+						
+						<p>Tags: <a ng-repeat="tag in idea.tags" class="btn btn-default btn-raised btn-sm" href="//cocreatellc.com/idea-search/tag/test">Test</a></p>
+					
+						<form class="form-inline">
+							<div class="btn-toolbar">
+								
+								<a title="View Idea" href="//cocreatellc.com/account/login/" class="btn btn-default blue">View</a>
+	
+								<a href="//cocreatellc.com/account/login/" class="btn btn-default up green"><span class="icon fa-caret-up"></span> <span>25</span></a>
+								
+								<a href="//cocreatellc.com/account/login/" class="orange btn btn-default down"><span class="icon fa-caret-down"></span> <span>2</span></a>
+							
+								<a title="Flag for Review" href="//cocreatellc.com/account/login/" class="btn btn-default flag red"><span class="icon fa-flag"></span></a>
+								
+								<a href="//cocreatellc.com/account/login/" class="btn btn-default view-comments olive"><span class="icon fa-comments-o"></span> <span>2</span></a>
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-1">
+						<a title="Analyze Idea" class="view-idea-link" href="//cocreatellc.com/account/login/">
+							<span class="glyphicon glyphicon-menu-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="//cocreatellc.com/js/socket.min.js"></script>
+<script src="//cocreatellc.com//cocreatellc.com/socket.io/socket.io.js"></script>
+<script>
+	var socket = io('http://cocreatellc.com/', {transports: ['websocket']});
+</script>
+<script>
+	var app = angular.module('cocreate', ['btford.socket-io'])
+	 .factory('$socket', function(socketFactory){
+	 		return socketFactory();
+	 })
+	
+	.controller('mainController', function($scope,$socket){
+		///////////////////////////////////////////////////////////////////////////////
+		// scope variables 
+		///////////////////////////////////////////////////////////////////////////////
+		
+		$scope.nick = '';
+		
+		///////////////////////////////////////////////////////////////////////////////
+		// view-model stuff
+		///////////////////////////////////////////////////////////////////////////////
+		
+		vm = this;
+		vm.ideas = [];
+		
+		///////////////////////////////////////////////////////////////////////////////
+		// socket event handlers
+		///////////////////////////////////////////////////////////////////////////////
+		
+		$socket.on('connect', function(){
+			/* server connected; pseudo-entry point */
+			console.log('Successfully connected to WebSocket server');
+			$socket.emit('api', {cmd:'ping', args:['test success']});
+			$socket.emit('ideas');
+		});
+		
+		$socket.on('pong', function(obj){
+			console.log('Pong', obj);
+		});
+		
+		$socket.on('idea', function(idea){
+			console.log('Idea',idea);
+			idea.tags = JSON.parse(idea.tags);
+			
+			if(!idea.downvotes || typeof idea.downvotes == 'undefined')
+				idea.dv = 0;
+			else
+				idea.dv = Object.keys(idea.downvotes).length;
+				
+			if(!idea.upvotes || typeof idea.upvotes == 'undefined')
+				idea.uv = 0;
+			else
+				idea.uv = Object.keys(idea.upvotes).length;
+			
+			vm.ideas.push(idea);
+		});
+		
+		///////////////////////////////////////////////////////////////////////////////
+		// utility functions:
+		///////////////////////////////////////////////////////////////////////////////
+		
+		/* code-behind */
+		
+		vm.getDownvotes = function(idea){
+			console.log('downvotes', idea.downvotes);
+			return Object.keys(JSON.parse(idea.downvotes)).length;
+		};
+		
+		vm.getUpvotes = function(idea){
+			return Object.keys(JSON.parse(idea.upvotes)).length;
+		};
+	});
+</script><div id="compose_modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Compose Message</h4>
+			</div>
+			<div class="modal-body" id="message">
+				<form id="message_form">
+					<div class="form-group">
+						<label for="to">Recipient</label>
+						<input name="to" type="text" class="form-control disabled" id="to"/>
+					</div>
+					
+					<input type="hidden" name="to_id" id="to_id"/>
+
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<input name="subject" type="text" class="form-control" id="subject" placeholder=""/>
+					</div>
+					
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea name="message" type="text" class="form-control" id="message" placeholder="Type your message here..."></textarea>
+					</div>					
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button id="send" type="button" class="btn btn-primary">Send</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="post_modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Post Idea</h4>
+			</div>
+			<div class="modal-body">
+				<form id="form_post">
+					<div class="form-group">
+						<label for="idea">Idea</label>
+						<textarea name="idea" class="form-control" id="idea" placeholder="What's your idea?"></textarea>
+						<p class="help-block" id="wc"></p>
+					</div>
+					
+					<div class="form-group">
+						<label for="tags">Tags</label>
+						<input name="tags" type="text" class="form-control" id="tags" placeholder="Space-separated tags">
+						<p class="help-block">Be descriptive! Tags are public and interest other users in your idea before they give in and want to collaborate on it.</p>
+					</div>
+					
+					<div class="checkbox">
+						<label>
+							<input id="public" type="checkbox" name="public"><span class="checkbox-material"><span class="check"></span></span> Make idea public by default
+						</label>
+						<p class="help-block">This will allow the idea and comments to be viewable by anyone, including anonymous visitors.</p>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button id="do_post" type="button" class="btn btn-primary">Post</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="sig_modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Sign This</h4>
+			</div>
+			<div class="modal-body">
+				<p>Before you can view ideas, we need a signature on-file for you to sign NDA's with. We don't share this at all and store it securely.</p>
+				<div id="signature-pad" class="m-signature-pad">
+					<div class="m-signature-pad--body">
+						<canvas></canvas>
+					</div>
+					<div class="m-signature-pad--footer">
+						<div class="description">Sign above to view ideas and agree to their owners' NDA's.</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button id="do_sig" type="button" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function resizeCanvas() {
+	var canvas = document.getElementById("signature-pad").querySelector("canvas");
+    var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+    canvas.width = canvas.offsetWidth * ratio;
+    canvas.height = canvas.offsetHeight * ratio;
+    canvas.getContext("2d").scale(ratio, ratio);
+}
+
+function acquireSig() {
+	$('#sig_modal').on('shown.bs.modal', function (e) {
+		setTimeout(function(){
+			var wrapper = document.getElementById("signature-pad"),
+		    canvas = wrapper.querySelector("canvas"),
+			    signaturePad;
+			window.onresize = resizeCanvas;
+			resizeCanvas();
+			window.signaturePad = new SignaturePad(canvas);
+		}, 200);
+	});
+	$('#sig_modal').modal('toggle');
+}
+	
+$(document).ready(function(){
+	$('#compose').click(function(){
+		$('#to').val($(this).data('to'));
+		$('#to_id').val($(this).data('id'));
+		$('#subject').val($(this).data('subject'));
+		$('#compose_modal').modal('toggle');
+	});
+	
+	$('#send').click(function(){
+		$('#compose_modal').modal('toggle');
+	});
+	
+	$('#post').click(function(){$('#post_modal').modal('toggle');});
+	
+/*
+	$('#idea').keyup(function(e){
+		var ideaLength = $('#idea').val().length;
+		
+		if(ideaLength >= 161) {
+			$('#idea').val($('#idea').val().substring(0, 160));
+			return e.preventDefault();
+		}
+		
+		$('#wc').text(ideaLength + '/160 characters remaining.');
+	});
+*/
+
+	$('#do_post').click(function(){
+		if($('#tags').val() == '')
+			return alert('Ideas must have tags.');
+		
+		$.ajax({
+			url: '/ajax/',
+			data: {
+				do: 'CoCreate_Ideas_Controller_Post',
+				action: 'post',
+				data: $('#form_post').serialize()
+			},
+			success: function(){
+				$('#idea').val('');
+				$('#tags').val('');
+				alert('Your idea was successfully posted!');
+				$('#post_modal').modal('toggle');
+			},
+			error: function(){
+				
+			}
+		});
+	});
+	
+	$('#do_sig').click(function(){
+		$(this).text('Saving...');
+		$.ajax('/ajax/',{
+			method: 'POST',
+			data: {
+				do: 'CoCreate_Users_Controller_AjaxSettings',
+				action: 'sig',
+				data: window.signaturePad.toDataURL()
+			},
+			success: function(){
+				$('#signature-pad').text('Saved!');
+				$('#sig_modal').modal('toggle');
+			},
+			error: function(){
+				//$('#signature-pad').text('Saved!');
+				$('#sig_modal').modal('toggle');
+			}
+		});
+	});
+	
+	$('.view-comments').click(function(){
+		return; 
+		$('#idea-' + $(this).data('idea')).addClass('idea-commentview');
+		$('#tags-' + $(this).data('idea')).addClass('hide');
+		$('#tags-' + $(this).data('idea')).addClass('hide');
+	});
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56439320-6', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<footer class="container-fluid footer__home">
+    <div id="copyright">
+        &copy; Cocreate LLC. All rights reserved. Patent Pending.
+        <br/>
+        <a rel="nofollow" href="//cocreatellc.com/terms">Terms of Use and Privacy</a>
+    </div>
+</footer></body></html>
